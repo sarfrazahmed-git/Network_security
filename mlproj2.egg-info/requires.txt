@@ -3,3 +3,5 @@ numpy
 scikit-learn
 dill
 Dotenv
+pymongo[srv]==3.12
+certifi

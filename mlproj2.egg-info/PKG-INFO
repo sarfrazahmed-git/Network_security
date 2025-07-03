@@ -8,6 +8,8 @@ Requires-Dist: numpy
 Requires-Dist: scikit-learn
 Requires-Dist: dill
 Requires-Dist: Dotenv
+Requires-Dist: pymongo[srv]==3.12
+Requires-Dist: certifi
 Dynamic: author
 Dynamic: requires-dist
 Dynamic: summary
