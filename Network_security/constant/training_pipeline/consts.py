@@ -1,0 +1,13 @@
+TARGET_COLUMN = "Result"
+PIPELINE_NAME = "NetworkSecurityPipeline"
+ARTIFACT_DIR = "artifact"
+FILE_NAME = "Networkdata.csv"
+TRAIN_FILE_NAME = "train.csv"
+TEST_FILE_NAME = "test.csv"
+MODEL_FILE_NAME = "model.pkl"
+DATA_INGESTION_COLLECTION_NAME = "Networkdata"
+DATA_INGESTION_DB_NAME = "srfai"
+DATA_INGESTION_DIR_NAME = "data_ingestion"
+DATA_INGESTION_FEATURE_STORE_DIR = "feature_store"
+DATA_INGESTION_INGESTED_DIR = "ingested"
+DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO = 0.2

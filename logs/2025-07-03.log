@@ -1,8 +1,0 @@
-2025-07-03 13:14:07 - INFO - logging module initialized
-2025-07-03 13:17:07 - INFO - logging module initialized
-2025-07-03 13:17:07 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/logger/logger.py at line number: 22 with error message: An error occurred: division by zero
-2025-07-03 13:44:36 - ERROR - bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
-2025-07-03 13:45:24 - INFO - Pinged your deployment. You successfully connected to MongoDB!
-2025-07-03 13:53:13 - INFO - Pinged your deployment. You successfully connected to MongoDB!
-2025-07-03 13:53:27 - INFO - Pinged your deployment. You successfully connected to MongoDB!
-2025-07-03 13:54:25 - INFO - Pinged your deployment. You successfully connected to MongoDB!
