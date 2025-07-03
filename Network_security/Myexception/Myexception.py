@@ -1,6 +1,5 @@
 import sys
-import exception
-from src.components.logging import logging
+from Network_security.logger.logger import logging
 
 def get_exception_detail(error_message, detail:sys):
     _,_,exc_tb = detail.exc_info()
@@ -9,8 +8,9 @@ def get_exception_detail(error_message, detail:sys):
     exception_detail = f"Error occurred in script: {file_name} at line number: {line_number} with error message: {error_message}"
     return exception_detail
 
-class CustomException:
+class CustomException(Exception):
     def __init__(self, error_message, detail:sys):
+        super().__init__(error_message)
         self.error_message = error_message
         self.detail = detail
         self.exception_detail = get_exception_detail(error_message, detail)
