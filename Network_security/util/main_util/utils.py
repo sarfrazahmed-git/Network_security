@@ -46,3 +46,17 @@ def save_object(file_path: str, obj: object):
                 pickle.dump(obj, file)
     except Exception as e:
         raise CustomException(e, sys) from e
+    
+def load_object(file_path: str):
+    try:
+        with open(file_path, 'rb') as file:
+            return pickle.load(file)
+    except Exception as e:
+        raise CustomException(e, sys) from e
+    
+def load_numpy_array_data(file_path: str):
+    try:
+        with open(file_path, 'rb') as file:
+            return np.load(file)
+    except Exception as e:
+        raise CustomException(e, sys) from e

@@ -6,4 +6,5 @@ Dotenv
 pymongo[srv]==3.12
 certifi
 pyaml
+xgboost
 -e.

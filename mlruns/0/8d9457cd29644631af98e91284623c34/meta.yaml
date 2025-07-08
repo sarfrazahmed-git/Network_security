@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/8d9457cd29644631af98e91284623c34/artifacts
+end_time: 1751979556581
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d9457cd29644631af98e91284623c34
+run_name: resilient-foal-648
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751979554120
+status: 3
+tags: []
+user_id: sarfraz

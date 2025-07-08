@@ -52,3 +52,276 @@
 2025-07-08 14:27:27 - INFO - Initiating data transformation
 2025-07-08 14:27:27 - INFO - Data transformation completed
 2025-07-08 14:27:27 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 14:27:17.214367/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 14:27:17.214367/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 14:27:17.214367/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 15:41:23 - INFO - Feature store created at artifact/2025-07-08 15:39:23.883848/data_ingestion/feature_store/feature_store.csv
+2025-07-08 15:41:23 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 15:41:23 - INFO - Train and test data split with ratio 0.2
+2025-07-08 15:41:23 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 15:41:23 - INFO - Train and test data directories created at artifact/2025-07-08 15:39:23.883848/data_ingestion/ingested
+2025-07-08 15:41:23 - INFO - Train and test data saved to artifact/2025-07-08 15:39:23.883848/data_ingestion/ingested/train.csv and artifact/2025-07-08 15:39:23.883848/data_ingestion/ingested/test.csv
+2025-07-08 15:41:23 - INFO - Data ingestion completed successfully.
+2025-07-08 15:41:23 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 15:41:23 - INFO - Train data validation successful
+2025-07-08 15:41:23 - INFO - Train data validation successful
+2025-07-08 15:41:23 - INFO - Data validation completed
+2025-07-08 15:41:23 - INFO - Initiating data transformation
+2025-07-08 15:41:23 - INFO - Data transformation completed
+2025-07-08 15:41:23 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 15:39:23.883848/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 15:39:23.883848/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 15:39:23.883848/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 15:41:23 - INFO - Loading transformed data
+2025-07-08 15:41:23 - INFO - Loading transformed test data
+2025-07-08 15:41:23 - INFO - Loading transformed data
+2025-07-08 15:41:23 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 15:41:23 - INFO - Training model: RandomForest
+2025-07-08 15:41:33 - INFO - Best parameters for RandomForest: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 15:41:33 - INFO - Best score for RandomForest: 0.9677966412254632
+2025-07-08 15:41:33 - INFO - Training model: GradientBoosting
+2025-07-08 15:41:53 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 15:41:53 - INFO - Best score for GradientBoosting: 0.9658454747936199
+2025-07-08 15:41:53 - INFO - Training model: XGBoost
+2025-07-08 15:41:55 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 15:41:55 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 15:41:55 - INFO - Training model: LogisticRegression
+2025-07-08 15:41:57 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 15:41:57 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 15:41:57 - INFO - Training model: DecisionTree
+2025-07-08 15:41:57 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 15:41:57 - INFO - Best score for DecisionTree: 0.9521755240022353
+2025-07-08 15:41:57 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 15:41:57 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 15:41:57 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906251594047198, recall=0.9906151062867481, f1_score=0.9904972303395313)
+2025-07-08 15:41:57 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.966078697421981, precision=0.9661617148528894, recall=0.966078697421981, f1_score=0.9653529444825988)
+2025-07-08 15:41:57 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 112 with error message: Error in initiate_model_trainer: DataTrainerArtifact.__init__() got an unexpected keyword argument 'model_name'
+2025-07-08 15:41:57 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/main.py at line number: 30 with error message: Error in main execution: Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 112 with error message: Error in initiate_model_trainer: DataTrainerArtifact.__init__() got an unexpected keyword argument 'model_name'
+2025-07-08 15:45:11 - INFO - Feature store created at artifact/2025-07-08 15:42:43.996282/data_ingestion/feature_store/feature_store.csv
+2025-07-08 15:45:11 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 15:45:11 - INFO - Train and test data split with ratio 0.2
+2025-07-08 15:45:11 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 15:45:11 - INFO - Train and test data directories created at artifact/2025-07-08 15:42:43.996282/data_ingestion/ingested
+2025-07-08 15:45:11 - INFO - Train and test data saved to artifact/2025-07-08 15:42:43.996282/data_ingestion/ingested/train.csv and artifact/2025-07-08 15:42:43.996282/data_ingestion/ingested/test.csv
+2025-07-08 15:45:11 - INFO - Data ingestion completed successfully.
+2025-07-08 15:45:11 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 15:45:11 - INFO - Train data validation successful
+2025-07-08 15:45:11 - INFO - Train data validation successful
+2025-07-08 15:45:11 - INFO - Data validation completed
+2025-07-08 15:45:11 - INFO - Initiating data transformation
+2025-07-08 15:45:11 - INFO - Data transformation completed
+2025-07-08 15:45:11 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 15:42:43.996282/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 15:42:43.996282/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 15:42:43.996282/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 15:45:11 - INFO - Loading transformed data
+2025-07-08 15:45:11 - INFO - Loading transformed test data
+2025-07-08 15:45:11 - INFO - Loading transformed data
+2025-07-08 15:45:11 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 15:45:11 - INFO - Training model: RandomForest
+2025-07-08 15:45:23 - INFO - Best parameters for RandomForest: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 15:45:23 - INFO - Best score for RandomForest: 0.9685955485395722
+2025-07-08 15:45:23 - INFO - Training model: GradientBoosting
+2025-07-08 15:45:44 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 15:45:44 - INFO - Best score for GradientBoosting: 0.966416566762125
+2025-07-08 15:45:44 - INFO - Training model: XGBoost
+2025-07-08 15:45:47 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 15:45:47 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 15:45:47 - INFO - Training model: LogisticRegression
+2025-07-08 15:45:49 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 15:45:49 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 15:45:49 - INFO - Training model: DecisionTree
+2025-07-08 15:45:49 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': None}
+2025-07-08 15:45:49 - INFO - Best score for DecisionTree: 0.9533360691744943
+2025-07-08 15:45:49 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 15:45:49 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 15:45:49 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.990629719893385, recall=0.9906151062867481, f1_score=0.9904962588791053)
+2025-07-08 15:45:49 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.9669832654907282, precision=0.9670689976266557, recall=0.9669832654907282, f1_score=0.9662768659630627)
+2025-07-08 15:45:49 - INFO - Model saved at: artifact/2025-07-08 15:42:43.996282/trained_mode/RandomForestClassifier.pkl
+2025-07-08 17:29:02 - INFO - Feature store created at artifact/2025-07-08 17:28:27.662088/data_ingestion/feature_store/feature_store.csv
+2025-07-08 17:29:02 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 17:29:02 - INFO - Train and test data split with ratio 0.2
+2025-07-08 17:29:02 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 17:29:02 - INFO - Train and test data directories created at artifact/2025-07-08 17:28:27.662088/data_ingestion/ingested
+2025-07-08 17:29:02 - INFO - Train and test data saved to artifact/2025-07-08 17:28:27.662088/data_ingestion/ingested/train.csv and artifact/2025-07-08 17:28:27.662088/data_ingestion/ingested/test.csv
+2025-07-08 17:29:02 - INFO - Data ingestion completed successfully.
+2025-07-08 17:29:02 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 17:29:02 - INFO - Train data validation successful
+2025-07-08 17:29:02 - INFO - Train data validation successful
+2025-07-08 17:29:02 - INFO - Data validation completed
+2025-07-08 17:29:02 - INFO - Initiating data transformation
+2025-07-08 17:29:02 - INFO - Data transformation completed
+2025-07-08 17:29:02 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 17:28:27.662088/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 17:28:27.662088/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 17:28:27.662088/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 17:29:02 - INFO - Loading transformed data
+2025-07-08 17:29:02 - INFO - Loading transformed test data
+2025-07-08 17:29:02 - INFO - Loading transformed data
+2025-07-08 17:29:02 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 17:29:02 - INFO - Training model: RandomForest
+2025-07-08 17:29:16 - INFO - Best parameters for RandomForest: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:29:16 - INFO - Best score for RandomForest: 0.9688355098076383
+2025-07-08 17:29:16 - INFO - Training model: GradientBoosting
+2025-07-08 17:29:38 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:29:38 - INFO - Best score for GradientBoosting: 0.9661850092634306
+2025-07-08 17:29:38 - INFO - Training model: XGBoost
+2025-07-08 17:29:41 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:29:41 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 17:29:41 - INFO - Training model: LogisticRegression
+2025-07-08 17:29:43 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 17:29:43 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 17:29:43 - INFO - Training model: DecisionTree
+2025-07-08 17:29:43 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:29:43 - INFO - Best score for DecisionTree: 0.9537846792658545
+2025-07-08 17:29:43 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 17:29:43 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:29:43 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906184836514197, recall=0.9906151062867481, f1_score=0.990499160859647)
+2025-07-08 17:29:43 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.9665309814563546, precision=0.9665821432010127, recall=0.9665309814563546, f1_score=0.9658285491826286)
+2025-07-08 17:29:43 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 117 with error message: Error in initiate_model_trainer: cannot access local variable 'Network_model' where it is not associated with a value
+2025-07-08 17:29:43 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/main.py at line number: 30 with error message: Error in main execution: Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 117 with error message: Error in initiate_model_trainer: cannot access local variable 'Network_model' where it is not associated with a value
+2025-07-08 17:31:42 - INFO - Feature store created at artifact/2025-07-08 17:31:01.950096/data_ingestion/feature_store/feature_store.csv
+2025-07-08 17:31:42 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 17:31:42 - INFO - Train and test data split with ratio 0.2
+2025-07-08 17:31:42 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 17:31:42 - INFO - Train and test data directories created at artifact/2025-07-08 17:31:01.950096/data_ingestion/ingested
+2025-07-08 17:31:42 - INFO - Train and test data saved to artifact/2025-07-08 17:31:01.950096/data_ingestion/ingested/train.csv and artifact/2025-07-08 17:31:01.950096/data_ingestion/ingested/test.csv
+2025-07-08 17:31:42 - INFO - Data ingestion completed successfully.
+2025-07-08 17:31:42 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 17:31:42 - INFO - Train data validation successful
+2025-07-08 17:31:42 - INFO - Train data validation successful
+2025-07-08 17:31:42 - INFO - Data validation completed
+2025-07-08 17:31:42 - INFO - Initiating data transformation
+2025-07-08 17:31:42 - INFO - Data transformation completed
+2025-07-08 17:31:42 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 17:31:01.950096/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 17:31:01.950096/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 17:31:01.950096/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 17:31:42 - INFO - Loading transformed data
+2025-07-08 17:31:42 - INFO - Loading transformed test data
+2025-07-08 17:31:42 - INFO - Loading transformed data
+2025-07-08 17:31:42 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 17:31:42 - INFO - Training model: RandomForest
+2025-07-08 17:31:56 - INFO - Best parameters for RandomForest: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:31:56 - INFO - Best score for RandomForest: 0.9688225977843711
+2025-07-08 17:31:56 - INFO - Training model: GradientBoosting
+2025-07-08 17:32:18 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:32:18 - INFO - Best score for GradientBoosting: 0.9662969933171377
+2025-07-08 17:32:18 - INFO - Training model: XGBoost
+2025-07-08 17:32:20 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:32:20 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 17:32:20 - INFO - Training model: LogisticRegression
+2025-07-08 17:32:22 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 17:32:22 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 17:32:22 - INFO - Training model: DecisionTree
+2025-07-08 17:32:22 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 17:32:22 - INFO - Best score for DecisionTree: 0.9541225152404044
+2025-07-08 17:32:22 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 17:32:22 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:32:22 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906214141668542, recall=0.9906151062867481, f1_score=0.990498197665557)
+2025-07-08 17:32:22 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.968340117593849, precision=0.9684177721930136, recall=0.968340117593849, f1_score=0.9676670649875908)
+2025-07-08 17:32:22 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 118 with error message: Error in initiate_model_trainer: Network_model.predict() missing 1 required positional argument: 'X'
+2025-07-08 17:32:22 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/main.py at line number: 30 with error message: Error in main execution: Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 118 with error message: Error in initiate_model_trainer: Network_model.predict() missing 1 required positional argument: 'X'
+2025-07-08 17:34:06 - INFO - Feature store created at artifact/2025-07-08 17:33:26.231586/data_ingestion/feature_store/feature_store.csv
+2025-07-08 17:34:06 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 17:34:06 - INFO - Train and test data split with ratio 0.2
+2025-07-08 17:34:06 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 17:34:06 - INFO - Train and test data directories created at artifact/2025-07-08 17:33:26.231586/data_ingestion/ingested
+2025-07-08 17:34:06 - INFO - Train and test data saved to artifact/2025-07-08 17:33:26.231586/data_ingestion/ingested/train.csv and artifact/2025-07-08 17:33:26.231586/data_ingestion/ingested/test.csv
+2025-07-08 17:34:06 - INFO - Data ingestion completed successfully.
+2025-07-08 17:34:06 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 17:34:06 - INFO - Train data validation successful
+2025-07-08 17:34:06 - INFO - Train data validation successful
+2025-07-08 17:34:06 - INFO - Data validation completed
+2025-07-08 17:34:06 - INFO - Initiating data transformation
+2025-07-08 17:34:06 - INFO - Data transformation completed
+2025-07-08 17:34:06 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 17:33:26.231586/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 17:33:26.231586/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 17:33:26.231586/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 17:34:06 - INFO - Loading transformed data
+2025-07-08 17:34:06 - INFO - Loading transformed test data
+2025-07-08 17:34:06 - INFO - Loading transformed data
+2025-07-08 17:34:06 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 17:34:06 - INFO - Training model: RandomForest
+2025-07-08 17:34:18 - INFO - Best parameters for RandomForest: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:34:18 - INFO - Best score for RandomForest: 0.9683641836606011
+2025-07-08 17:34:18 - INFO - Training model: GradientBoosting
+2025-07-08 17:34:40 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:34:40 - INFO - Best score for GradientBoosting: 0.9664127832299728
+2025-07-08 17:34:40 - INFO - Training model: XGBoost
+2025-07-08 17:34:43 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:34:43 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 17:34:43 - INFO - Training model: LogisticRegression
+2025-07-08 17:34:44 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 17:34:44 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 17:34:44 - INFO - Training model: DecisionTree
+2025-07-08 17:34:45 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 17:34:45 - INFO - Best score for DecisionTree: 0.9525046300293575
+2025-07-08 17:34:45 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 17:34:45 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 100, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:34:45 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906173237518341, recall=0.9906151062867481, f1_score=0.9904996409079831)
+2025-07-08 17:34:45 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.9669832654907282, precision=0.9670459232300885, recall=0.9669832654907282, f1_score=0.9662858542961864)
+2025-07-08 17:34:45 - INFO - New Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906173237518341, recall=0.9906151062867481, f1_score=0.9904996409079831)
+2025-07-08 17:34:45 - INFO - New Test metrics: classificationMetricArtifact(accuracy=0.9669832654907282, precision=0.9670459232300885, recall=0.9669832654907282, f1_score=0.9662858542961864)
+2025-07-08 17:34:45 - INFO - Model saved at: artifact/2025-07-08 17:33:26.231586/trained_mode/RandomForestClassifier.pkl
+2025-07-08 17:54:08 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/main.py at line number: 17 with error message: Error in main execution: The DNS operation timed out after 20.000372409820557 seconds
+2025-07-08 17:55:14 - INFO - Feature store created at artifact/2025-07-08 17:55:03.999565/data_ingestion/feature_store/feature_store.csv
+2025-07-08 17:55:14 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 17:55:14 - INFO - Train and test data split with ratio 0.2
+2025-07-08 17:55:14 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 17:55:14 - INFO - Train and test data directories created at artifact/2025-07-08 17:55:03.999565/data_ingestion/ingested
+2025-07-08 17:55:14 - INFO - Train and test data saved to artifact/2025-07-08 17:55:03.999565/data_ingestion/ingested/train.csv and artifact/2025-07-08 17:55:03.999565/data_ingestion/ingested/test.csv
+2025-07-08 17:55:14 - INFO - Data ingestion completed successfully.
+2025-07-08 17:55:14 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 17:55:14 - INFO - Train data validation successful
+2025-07-08 17:55:14 - INFO - Train data validation successful
+2025-07-08 17:55:14 - INFO - Data validation completed
+2025-07-08 17:55:14 - INFO - Initiating data transformation
+2025-07-08 17:55:14 - INFO - Data transformation completed
+2025-07-08 17:55:14 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 17:55:03.999565/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 17:55:03.999565/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 17:55:03.999565/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 17:55:14 - INFO - Loading transformed data
+2025-07-08 17:55:14 - INFO - Loading transformed test data
+2025-07-08 17:55:14 - INFO - Loading transformed data
+2025-07-08 17:55:14 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 17:55:14 - INFO - Training model: RandomForest
+2025-07-08 17:55:34 - INFO - Best parameters for RandomForest: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:55:34 - INFO - Best score for RandomForest: 0.9684901107622795
+2025-07-08 17:55:34 - INFO - Training model: GradientBoosting
+2025-07-08 17:56:07 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:56:07 - INFO - Best score for GradientBoosting: 0.9658454747936199
+2025-07-08 17:56:07 - INFO - Training model: XGBoost
+2025-07-08 17:56:10 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:56:10 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 17:56:10 - INFO - Training model: LogisticRegression
+2025-07-08 17:56:12 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 17:56:12 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 17:56:12 - INFO - Training model: DecisionTree
+2025-07-08 17:56:13 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:56:13 - INFO - Best score for DecisionTree: 0.9538053236020133
+2025-07-08 17:56:13 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 17:56:13 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}
+2025-07-08 17:56:13 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 122 with error message: Error in initiate_model_trainer: 'classificationMetricArtifact' object has no attribute 'get'
+2025-07-08 17:56:13 - ERROR - Error occurred in script: /home/sarfraz/foxtek/mlproj2/main.py at line number: 30 with error message: Error in main execution: Error occurred in script: /home/sarfraz/foxtek/mlproj2/Network_security/components/model_trainer.py at line number: 122 with error message: Error in initiate_model_trainer: 'classificationMetricArtifact' object has no attribute 'get'
+2025-07-08 17:58:36 - INFO - Feature store created at artifact/2025-07-08 17:58:23.662186/data_ingestion/feature_store/feature_store.csv
+2025-07-08 17:58:36 - INFO - Data read from MongoDB and stored in feature store.
+2025-07-08 17:58:36 - INFO - Train and test data split with ratio 0.2
+2025-07-08 17:58:36 - INFO - Train data shape: (8844, 31), Test data shape: (2211, 31)
+2025-07-08 17:58:36 - INFO - Train and test data directories created at artifact/2025-07-08 17:58:23.662186/data_ingestion/ingested
+2025-07-08 17:58:36 - INFO - Train and test data saved to artifact/2025-07-08 17:58:23.662186/data_ingestion/ingested/train.csv and artifact/2025-07-08 17:58:23.662186/data_ingestion/ingested/test.csv
+2025-07-08 17:58:36 - INFO - Data ingestion completed successfully.
+2025-07-08 17:58:36 - INFO - Drift report generated at {'having_IP_Address': {'is_found': False, 'p_value': np.float64(1.0)}, 'URL_Length': {'is_found': False, 'p_value': np.float64(0.9999971010402764)}, 'Shortining_Service': {'is_found': False, 'p_value': np.float64(1.0)}, 'having_At_Symbol': {'is_found': False, 'p_value': np.float64(1.0)}, 'double_slash_redirecting': {'is_found': False, 'p_value': np.float64(0.9999999998789996)}, 'Prefix_Suffix': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'having_Sub_Domain': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'SSLfinal_State': {'is_found': False, 'p_value': np.float64(0.45991477918984003)}, 'Domain_registeration_length': {'is_found': False, 'p_value': np.float64(0.9958579353974752)}, 'Favicon': {'is_found': False, 'p_value': np.float64(1.0)}, 'port': {'is_found': False, 'p_value': np.float64(1.0)}, 'HTTPS_token': {'is_found': False, 'p_value': np.float64(1.0)}, 'Request_URL': {'is_found': False, 'p_value': np.float64(0.2689286131324479)}, 'URL_of_Anchor': {'is_found': False, 'p_value': np.float64(0.9997752665277037)}, 'Links_in_tags': {'is_found': False, 'p_value': np.float64(0.9995152509457711)}, 'SFH': {'is_found': False, 'p_value': np.float64(1.0)}, 'Submitting_to_email': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Abnormal_URL': {'is_found': False, 'p_value': np.float64(1.0)}, 'Redirect': {'is_found': False, 'p_value': np.float64(1.0)}, 'on_mouseover': {'is_found': False, 'p_value': np.float64(0.9999999999598222)}, 'RightClick': {'is_found': False, 'p_value': np.float64(1.0)}, 'popUpWidnow': {'is_found': False, 'p_value': np.float64(0.9999999991050752)}, 'Iframe': {'is_found': False, 'p_value': np.float64(1.0)}, 'age_of_domain': {'is_found': False, 'p_value': np.float64(0.9914952304622426)}, 'DNSRecord': {'is_found': False, 'p_value': np.float64(1.0)}, 'web_traffic': {'is_found': False, 'p_value': np.float64(0.5733052694150307)}, 'Page_Rank': {'is_found': False, 'p_value': np.float64(0.9876237011526984)}, 'Google_Index': {'is_found': False, 'p_value': np.float64(0.9999953843756324)}, 'Links_pointing_to_page': {'is_found': False, 'p_value': np.float64(0.9996208033369954)}, 'Statistical_report': {'is_found': False, 'p_value': np.float64(1.0)}, 'Result': {'is_found': False, 'p_value': np.float64(0.9086653866244705)}}
+2025-07-08 17:58:36 - INFO - Train data validation successful
+2025-07-08 17:58:36 - INFO - Train data validation successful
+2025-07-08 17:58:36 - INFO - Data validation completed
+2025-07-08 17:58:36 - INFO - Initiating data transformation
+2025-07-08 17:58:36 - INFO - Data transformation completed
+2025-07-08 17:58:36 - INFO - Data transformation artifact created: DataTransformationArtifact(transformed_train_file_path='artifact/2025-07-08 17:58:23.662186/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/2025-07-08 17:58:23.662186/data_transformation/transformed/test.npy', data_transformation_object_file_path='artifact/2025-07-08 17:58:23.662186/data_transformation/transformed_object/preprocessing_object.pkl')
+2025-07-08 17:58:36 - INFO - Loading transformed data
+2025-07-08 17:58:36 - INFO - Loading transformed test data
+2025-07-08 17:58:36 - INFO - Loading transformed data
+2025-07-08 17:58:36 - INFO - Starting model training with hyperparameter tuning
+2025-07-08 17:58:36 - INFO - Training model: RandomForest
+2025-07-08 17:58:49 - INFO - Best parameters for RandomForest: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 17:58:49 - INFO - Best score for RandomForest: 0.9682597183277574
+2025-07-08 17:58:49 - INFO - Training model: GradientBoosting
+2025-07-08 17:59:10 - INFO - Best parameters for GradientBoosting: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:59:10 - INFO - Best score for GradientBoosting: 0.9664127832299728
+2025-07-08 17:59:10 - INFO - Training model: XGBoost
+2025-07-08 17:59:12 - INFO - Best parameters for XGBoost: {'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.1}
+2025-07-08 17:59:12 - INFO - Best score for XGBoost: 0.9640130171426943
+2025-07-08 17:59:12 - INFO - Training model: LogisticRegression
+2025-07-08 17:59:13 - INFO - Best parameters for LogisticRegression: {'solver': 'saga', 'C': 0.1}
+2025-07-08 17:59:13 - INFO - Best score for LogisticRegression: 0.9286011052601507
+2025-07-08 17:59:13 - INFO - Training model: DecisionTree
+2025-07-08 17:59:13 - INFO - Best parameters for DecisionTree: {'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 17:59:13 - INFO - Best score for DecisionTree: 0.9533339806323556
+2025-07-08 17:59:13 - INFO - Model training completed with hyperparameter tuning
+2025-07-08 17:59:13 - INFO - Best model: RandomForestClassifier with parameters: {'n_estimators': 200, 'min_samples_split': 2, 'max_depth': 20}
+2025-07-08 17:59:16 - INFO - Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906273377093454, recall=0.9906151062867481, f1_score=0.9904967451262728)
+2025-07-08 17:59:16 - INFO - Test metrics: classificationMetricArtifact(accuracy=0.9669832654907282, precision=0.9671246327165801, recall=0.9669832654907282, f1_score=0.9662587056252214)
+2025-07-08 17:59:16 - INFO - New Train metrics: classificationMetricArtifact(accuracy=0.9906151062867481, precision=0.9906273377093454, recall=0.9906151062867481, f1_score=0.9904967451262728)
+2025-07-08 17:59:16 - INFO - New Test metrics: classificationMetricArtifact(accuracy=0.9669832654907282, precision=0.9671246327165801, recall=0.9669832654907282, f1_score=0.9662587056252214)
+2025-07-08 17:59:16 - INFO - Model saved at: artifact/2025-07-08 17:58:23.662186/trained_mode/RandomForestClassifier.pkl

@@ -1,0 +1,22 @@
+artifact_path: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/models/m-51af95d44f8c479ab5750b1067b0dd80/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+mlflow_version: 3.1.1
+model_id: m-51af95d44f8c479ab5750b1067b0dd80
+model_size_bytes: 20280266
+model_uuid: m-51af95d44f8c479ab5750b1067b0dd80
+prompts: null
+run_id: 8d9457cd29644631af98e91284623c34
+utc_time_created: '2025-07-08 12:59:14.152959'

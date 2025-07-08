@@ -11,6 +11,7 @@ Requires-Dist: Dotenv
 Requires-Dist: pymongo[srv]==3.12
 Requires-Dist: certifi
 Requires-Dist: pyaml
+Requires-Dist: xgboost
 Dynamic: author
 Dynamic: requires-dist
 Dynamic: summary

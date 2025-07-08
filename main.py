@@ -6,6 +6,8 @@ from Network_security.logger.logger import logging
 from Network_security.Myexception.Myexception import CustomException
 from Network_security.entity.config_entity import DataTransformationConfig
 from Network_security.components.data_tranformer import DataTransformer
+from Network_security.components.model_trainer import ModelTrainer
+from Network_security.entity.config_entity import DataTrainerConfig
 import sys
 
 
@@ -23,5 +25,9 @@ try:
     print(val_res)
     print(res)
     print(trans_res)
+    trainer_config = DataTrainerConfig(tconfig_obj)
+    model_trainer = ModelTrainer(trainer_config, trans_res)
+    trainer_artifact = model_trainer.initiate_model_trainer()
+    print(trainer_artifact)
 except Exception as e:
-    raise CustomException(e, sys) from e
+    raise CustomException(f"Error in main execution: {e}", sys)

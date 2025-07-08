@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/d47b7f1ab9fb4fe3ad2b9546ea3db648/artifacts
+end_time: 1751979373527
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d47b7f1ab9fb4fe3ad2b9546ea3db648
+run_name: aged-mule-809
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751979373520
+status: 4
+tags: []
+user_id: sarfraz

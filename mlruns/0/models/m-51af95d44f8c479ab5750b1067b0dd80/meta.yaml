@@ -1,0 +1,10 @@
+artifact_location: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/models/m-51af95d44f8c479ab5750b1067b0dd80/artifacts
+creation_timestamp: 1751979554141
+experiment_id: '0'
+last_updated_timestamp: 1751979556577
+model_id: m-51af95d44f8c479ab5750b1067b0dd80
+model_type: null
+name: model
+source_run_id: 8d9457cd29644631af98e91284623c34
+status: 2
+status_message: null
