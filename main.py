@@ -4,6 +4,8 @@ from Network_security.entity.config_entity import TrainingPipelineConfig
 from Network_security.components.data_validation import DataValidation
 from Network_security.logger.logger import logging
 from Network_security.Myexception.Myexception import CustomException
+from Network_security.entity.config_entity import DataTransformationConfig
+from Network_security.components.data_tranformer import DataTransformer
 import sys
 
 
@@ -15,7 +17,11 @@ try:
     val_config_obj = DataValidationConfig(tconfig_obj)
     validation_obj = DataValidation(val_config_obj, res)
     val_res = validation_obj.validate_data()
+    trans_config_obj = DataTransformationConfig(tconfig_obj)
+    transformer_obj = DataTransformer(val_res, trans_config_obj)
+    trans_res = transformer_obj.initiate_data_transformation()
     print(val_res)
     print(res)
+    print(trans_res)
 except Exception as e:
     raise CustomException(e, sys) from e

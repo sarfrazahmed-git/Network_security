@@ -7,7 +7,7 @@ from Network_security.entity.config_entity import DataValidationConfig
 from Network_security.logger.logger import logging
 from Network_security.Myexception.Myexception import CustomException
 from Network_security.entity.artifact_entity import ArtifactEntity, DataValidationArtifact
-from Network_security.util.validation_util.utils import read_yaml_file, write_yaml_file
+from Network_security.util.main_util.utils import read_yaml_file, write_yaml_file
 
 
 

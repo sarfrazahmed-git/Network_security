@@ -31,3 +31,18 @@ def write_yaml_file(file_path: str, content: dict):
     except Exception as e:
         raise CustomException(e, sys) from e
 
+def save_numpy_array_data(file_path: str, array: np.ndarray):
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'wb') as file:
+            np.save(file, array)
+    except Exception as e:
+        raise CustomException(e, sys) from e
+    
+def save_object(file_path: str, obj: object):
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'wb') as file:
+                pickle.dump(obj, file)
+    except Exception as e:
+        raise CustomException(e, sys) from e
