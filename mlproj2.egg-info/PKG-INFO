@@ -10,6 +10,7 @@ Requires-Dist: dill
 Requires-Dist: Dotenv
 Requires-Dist: pymongo[srv]==3.12
 Requires-Dist: certifi
+Requires-Dist: pyaml
 Dynamic: author
 Dynamic: requires-dist
 Dynamic: summary
