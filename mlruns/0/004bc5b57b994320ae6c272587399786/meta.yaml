@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/004bc5b57b994320ae6c272587399786/artifacts
+end_time: 1751981506760
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 004bc5b57b994320ae6c272587399786
+run_name: incongruous-bat-323
+run_uuid: 004bc5b57b994320ae6c272587399786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751981503023
+status: 3
+tags: []
+user_id: sarfraz

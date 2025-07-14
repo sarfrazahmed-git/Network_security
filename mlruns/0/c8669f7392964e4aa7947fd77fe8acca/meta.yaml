@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/c8669f7392964e4aa7947fd77fe8acca/artifacts
+end_time: 1751982077335
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c8669f7392964e4aa7947fd77fe8acca
+run_name: incongruous-fly-222
+run_uuid: c8669f7392964e4aa7947fd77fe8acca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751982073749
+status: 3
+tags: []
+user_id: sarfraz

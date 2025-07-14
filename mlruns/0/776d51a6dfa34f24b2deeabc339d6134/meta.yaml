@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/776d51a6dfa34f24b2deeabc339d6134/artifacts
+end_time: 1751981862162
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 776d51a6dfa34f24b2deeabc339d6134
+run_name: adventurous-ant-547
+run_uuid: 776d51a6dfa34f24b2deeabc339d6134
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751981858108
+status: 3
+tags: []
+user_id: sarfraz

@@ -51,8 +51,8 @@ class DataTransformer:
             test_target = test_target.replace(-1,0)
 
             data_transformation_object = self.get_data_transformation_object()
-            transformed_train_features = data_transformation_object.fit_transform(train_features)
-            transformed_test_features = data_transformation_object.transform(test_features)
+            transformed_train_features = data_transformation_object.fit_transform(train_features.to_numpy())
+            transformed_test_features = data_transformation_object.transform(test_features.to_numpy())
             logging.info("Data transformation completed")
 
             train_arr = np.c_[transformed_train_features, train_target]

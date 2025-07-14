@@ -125,7 +125,7 @@ class ModelTrainer:
             logging.info(f"Train metrics: {train_metric}")
             logging.info(f"Test metrics: {test_metric}")
             model_trainer_artifact = DataTrainerArtifact(
-                trained_model_file_path=os.path.join(self.data_trainer_config.trained_model_dir, f"{best_model_name}.pkl"),
+                trained_model_file_path=self.data_trainer_config.trained_model_file_path,
                 train_metric_artifact=train_metric,
                 test_metric_artifact=test_metric,
             )

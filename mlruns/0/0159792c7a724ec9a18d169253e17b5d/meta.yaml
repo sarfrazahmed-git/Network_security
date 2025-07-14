@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sarfraz/foxtek/mlproj2/mlruns/0/0159792c7a724ec9a18d169253e17b5d/artifacts
+end_time: 1751983095963
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0159792c7a724ec9a18d169253e17b5d
+run_name: casual-shad-949
+run_uuid: 0159792c7a724ec9a18d169253e17b5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751983091629
+status: 3
+tags: []
+user_id: sarfraz

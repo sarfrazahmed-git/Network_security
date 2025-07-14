@@ -5,6 +5,7 @@ Network_security/util.py
 Network_security/Myexception/Myexception.py
 Network_security/Myexception/__init__.py
 Network_security/cloud/__init__.py
+Network_security/components/Network_model.py
 Network_security/components/__init__.py
 Network_security/components/data_ingestion.py
 Network_security/components/data_tranformer.py
@@ -17,6 +18,8 @@ Network_security/entity/config_entity.py
 Network_security/logger/__init__.py
 Network_security/logger/logger.py
 Network_security/pipelines/__init__.py
+Network_security/pipelines/batch_predictions.py
+Network_security/pipelines/training_pipeline.py
 Network_security/util/__init__.py
 Network_security/util/main_util/__init__.py
 Network_security/util/main_util/utils.py
